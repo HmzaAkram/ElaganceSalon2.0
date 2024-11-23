@@ -1,0 +1,260 @@
+    /* General Body Styling */
+    body,
+    .bg-dark {
+        background-color: #1b1b1b !important; /* Dark background for a luxe feel */
+        font-family: 'Roboto', sans-serif;
+        color: #d1d5db;
+        overflow-x: hidden;
+    }
+
+    /* Sidebar Styling */
+    .sidebar {
+        background-color: #2c3e50; /* Deep charcoal */
+        box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+        transition: background-color 0.3s;
+    }
+
+    .sidebar:hover {
+        background-color: #34495e; /* Slightly lighter on hover */
+    }
+
+    /* Navbar Styling */
+    .navbar.bg-secondary {
+        background-color: #2c3e50; /* Deep charcoal */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Navbar Text Styling */
+    .navbar-dark .navbar-nav .nav-link {
+        color: #d1d5db;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active {
+        color: #c0a16b;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #c0a16b;
+    }
+
+    /* Sidebar Links */
+    .nav-link {
+        position: relative;
+        color: #d1d5db;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 100%;
+        background: transparent;
+        border-radius: 2px;
+        transition: background 0.3s;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        background-color: #c0a16b; /* Gold accent for active/hover links */
+    }
+
+    .nav-link:hover {
+        background-color: rgba(255, 215, 0, 0.1);
+        color: #c0a16b;
+    }
+
+    /* Primary Button */
+    .btn-primary,
+    .back-to-top {
+        color: #1b1b1b !important;
+        background: linear-gradient(135deg, #c0a16b 0%, #a8895d 100%);
+        border: none;
+        transition: background 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary:hover,
+    .back-to-top:hover {
+        background: linear-gradient(135deg, #b89a60 0%, #9f8250 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Spinner Loader */
+    /* .spinner-border.text-primary {
+        color: #c0a16b;
+        animation: spinner-grow 0.8s infinite ease-in-out;
+    } */
+
+    @keyframes spinner-grow {
+        0% {
+            transform: scale(0.9);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(0.9);
+        }
+    }
+
+    /* Card Styling */
+    .card {
+        background-color: #2c3e50;
+        border: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-title {
+        color: #c0a16b;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        font-weight: 700;
+    }
+
+    .card-text {
+        color: #d1d5db;
+    }
+
+    /* Dropdown Menu Styling */
+    .dropdown-menu {
+        background-color: #2c3e50;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .dropdown-item {
+        color: #d1d5db;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+    .dropdown-item:hover {
+        background-color: #c0a16b;
+        color: #1b1b1b;
+    }
+
+    /* Footer Styling */
+    .bg-secondary {
+        background-color: #1c1e21 !important;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        padding: 1.5rem;
+    }
+
+    .bg-secondary a {
+        color: #d1d5db;
+        transition: color 0.3s;
+    }
+
+    .bg-secondary a:hover {
+        color: #c0a16b;
+    }
+
+    /* Additional Icon Effects */
+    .fa,
+    .bi {
+        color: #c0a16b;
+        transition: transform 0.3s;
+    }
+
+    .fa:hover,
+    .bi:hover {
+        transform: scale(1.1);
+    }
+
+    /* Form Input Styling */
+    .form-control {
+        background-color: #343a40;
+        color: #d1d5db;
+        border: 1px solid #c0a16b;
+        border-radius: 5px;
+        padding: 0.75rem;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: #c0a16b;
+        box-shadow: 0 0 8px rgba(192, 161, 107, 0.6);
+    }
+
+    /* Scrollbar Styling */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1b1b1b;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #c0a16b;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #b89a60;
+    }
+
+    /* Transition Effects */
+    .transition {
+        transition: all 0.3s ease;
+    }
+
+    /* Hover Animation on All Buttons */
+    .btn:hover,
+    .nav-link:hover,
+    .dropdown-item:hover {
+        transform: translateY(-2px);
+    }
+    /* Footer Fixes */
+.container-fluid.pt-4.px-4 {
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: #2c3e50; /* Dark color matching the sidebar */
+}
+
+.bg-secondary {
+background-color: #1b1b1b !important; /* Dark background to match the theme */
+color: #ccc; /* Lighter text color for contrast */
+border-radius: 10px 10px 0 0; /* Rounded corners for the footer */
+}
+
+.text-center {
+color: #fff; /* White text color for footer */
+}
+
+.text-center a {
+color: #3498db; /* Highlight links with a blue color */
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.text-center a:hover {
+color: #1abc9c; /* Change color on hover */
+}
+
+/* Mobile responsiveness for the footer */
+@media (max-width: 768px) {
+.container-fluid.pt-4.px-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bg-secondary {
+    padding: 20px 10px;
+}
+}
